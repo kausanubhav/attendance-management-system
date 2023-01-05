@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+//Home-container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+.container{
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    float:left;
+    float:right;
+}
+
+
+.header {
+  background-color: rgb(50, 53, 106);
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+
+  .title{
+    font-size: 3rem;
+    color:white;
+    font-weight: bold;
+  }
+
+  .subTitle{
+    font-size: 2rem;
+    color: lightgray;
+    
+  }
+
+  .checkInCheckOutBtns {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 3rem;
+  }
+}
+
+//Student-info
+  .studentInfo{
+    background-color: rgb(50, 53, 106);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+    h1,h2{
+        text-align: center;  
+        color:white; 
+    }
+  }
+
+
+
+//Checkin and Checkout
+.form-container {
+  background-color: rgb(50, 53, 106);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-wrapper {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    
+    .title {
+      color: rgb(50, 50, 121);
+      font-size: 20px;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        padding: 15px;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid rgb(50, 50, 121);
+
+        &::placeholder {
+          color: rgb(127, 129, 244);
+        }
+      }
+
+      button {
+        background-color: rgb(50, 50, 121);
+        border: none;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      }
+      
+    }
+    p {
+      color: rgb(86, 5, 248);
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+}
